@@ -1471,9 +1471,9 @@ public void Main(string argument, UpdateType updateSource)
             BSS_TextPanel.SetValue("FontColor", new Color(LCDbright, LCDbright, LCDbright));  // White
             BSS_TextPanel.SetValue("FontSize", 0.10f);    // set Font size of your LCD
             BSS_TextPanel.SetValue("Font", (long)1147350002);
-            BSS_TextPanel.ShowPublicTextOnScreen();
+            BSS_TextPanel.ContentType = ContentType.TEXT_AND_IMAGE;
             //BatteryStatus_Lcd_X.WritePublicText("", false);
-            BSS_TextPanel.WritePublicText("" + str_AllBoundlis_001_To_178, false);
+            BSS_TextPanel.WriteText(str_AllBoundlis_001_To_178, false);
         }
     }
 } // End of Main script
